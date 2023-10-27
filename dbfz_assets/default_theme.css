@@ -1,0 +1,134 @@
+:root {
+	--main-bg0-colour: #000;
+	--main-bg1-colour: #222;
+	--content-bg-colour: rgba(100%, 100%, 100%, 0.75);
+	--text-colour: #FFF;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	height: 100%;
+}
+
+body {
+	color: var(--text-colour);
+	background-color: var(--main-bg0-colour);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--text-colour);
+	text-decoration:none;
+	position:relative;
+}
+
+#container {
+	max-width: 1710px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px var(--content-bg-colour);
+	border-radius: 20px;
+	border: solid 3px var(--content-bg-colour);
+	width: 100%;
+}
+
+#content {
+	position:relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: var(--main-bg0-colour);
+	display: flex;
+	align-items: stretch;
+}
+
+#content>div:first-child {
+	z-index: 2;
+	margin-top: 20px;
+}
+
+#downloadbtn {
+	z-index:2;
+	padding: 4px;
+	margin-top: 10px;
+    margin-left: 10px;
+	opacity: 0.4;
+	cursor: default;
+	color: var(--text-colour);
+}
+
+#downloadbtn:not(.disabled):hover {
+	color: #6EE16C;
+}
+
+#texselect {
+	z-index: 2;
+	flex-basis:400px;
+	padding: 20px;
+}
+
+#texselect ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#texselect li {
+	margin-top: 4px;
+}
+
+#texselect li:before {
+	content: attr(data-active);
+}
+
+#texselect li:hover {
+	color: #6EE16C;
+}
+
+input[type="button"] {
+	background: none;
+	border: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#texpreview {
+	position:absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: blur(3px);
+	z-index: 1;
+	background-color: var(--main-bg1-colour);;
+	opacity: 0.4;
+	right:0;
+}
+
+#cube {
+	flex-basis: 400px;
+	flex-grow:1;
+	z-index: 2;
+}
+
+@media only screen and (max-width :1330px) {
+	#container {
+		margin: 0px auto;
+		height:100%;
+		border-radius:0;
+		border:none;
+	}
+
+	#content {
+		height: 100%;
+		margin: auto;
+		border-radius: 0;
+		box-sizing: border-box;
+	}
+}

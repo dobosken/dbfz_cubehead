@@ -1,0 +1,35 @@
+<!-- write cache settings -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cubehead Textures</title>
+    <link rel="stylesheet" type="text/css" href="./dbfz_assets/default_theme.css" title="Default" />
+    <link rel="icon" type="image/gif" href="./dbfz_assets/favicon.gif">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="don t b square" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "./dbfz_assets/three.module.min.js"
+        }
+    }
+    </script>
+    <script type="module" src="./dbfz_assets/model-viewer-module.min.js"></script>
+    <script type="module" src="./dbfz_assets/model-viewer-effects.min.js"></script>
+</head>
+
+<body>
+    <div id="container"><div id="content">
+        <div><a id="downloadbtn" href="#" class="disabled">Download active texture 💾</a><div id="texselect">Loading... Probably.</div></div>
+        <div id="texpreview"></div>
+        <model-viewer id="cube" src="./dbfz_assets/cube.glb" disable-zoom disable-pan camera-orbit="70deg 70deg 4m" shadow-intensity="0" camera-controls touch-action="pan-y" interaction-prompt="none">
+            <effect-composer>
+                <outline-effect strength="4" smoothing="1" color="#000000"></outline-effect>
+                <smaa-effect></smaa-effect>
+            </effect-composer>
+        </model-viewer>
+        <script type="text/javascript" src="./dbfz_assets/dbfz_ch.js"></script>
+    </div></div>
+</body>
+</html>

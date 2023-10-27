@@ -1,0 +1,19 @@
+[
+  {"type":"directory","name":"../textures","contents":[
+    {"type":"file","name":"db_faces.png"},
+    {"type":"file","name":"mc_alex.png"},
+    {"type":"file","name":"mc_creeper.png"},
+    {"type":"file","name":"mc_steve.png"},
+    {"type":"file","name":"mc_zombie.png"},
+    {"type":"file","name":"rgb_checkerboard.png"},
+    {"type":"file","name":"template.png"},
+    {"type":"file","name":"txt_5lllftw.png"},
+    {"type":"file","name":"txt_downtechmash.png"},
+    {"type":"file","name":"txt_gg.png"},
+    {"type":"file","name":"txt_mrfeedback.png"},
+    {"type":"file","name":"txt_rollback.png"},
+    {"type":"file","name":"Unreal Anime Mods.png"}
+  ]}
+,
+  {"type":"report","directories":1,"files":13}
+]
