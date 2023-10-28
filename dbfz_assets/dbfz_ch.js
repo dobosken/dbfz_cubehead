@@ -7,7 +7,7 @@ const cube = document.getElementById("cube");
 const texselect = document.getElementById("texselect");
 const texpreview = document.getElementById("texpreview");
 const downloadbtn = document.getElementById("downloadbtn");
-// tree -J ../textures > textures.json
+// tree -J ../textures > texturelist.json
 const texturelist = './dbfz_assets/texturelist.json';
 
 // var shit
